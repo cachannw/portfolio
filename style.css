@@ -24,8 +24,8 @@ body {
 /*** REUSE ***/
 
 .container {
-  padding-left: clamp(2rem, 17vw, 24rem);
-  padding-right: clamp(2rem, 17vw, 24rem);
+  padding-left: clamp(2rem, 11vw, 24rem);
+  padding-right: clamp(2rem, 11vw, 24rem);
 }
 
 h3 {
@@ -63,8 +63,11 @@ h3 {
 
 header {
   font-family: var(--text-h);
-  font-size: clamp(1.6rem, 1.8vw, 2rem);
-  margin: 4rem 5.6rem 3rem 5.6rem;
+  font-size: clamp(1.4rem, 1.8vw, 2rem);
+  margin-top: clamp(3.4rem, 3vw, 4rem);
+  margin-bottom: clamp(2.4rem, 3vw, 4rem);
+  margin-left: clamp(3rem, 4vw, 5.6rem);
+  margin-right: clamp(3rem, 4vw, 5.6rem);
   display: flex;
   justify-content: space-between;
 }
@@ -103,12 +106,12 @@ hr {
 }
 
 h1 {
-  font-size: clamp(6rem, 7vw, 11.2rem);
+  font-size: clamp(5rem, 7vw, 11.2rem);
 }
 
 h2 {
   margin-top: 4rem;
-  font-size: clamp(3rem, 6vw, 8rem);
+  font-size: clamp(2.8rem, 6vw, 8rem);
 }
 
 /*** WORK ***/
@@ -132,7 +135,7 @@ h2 {
 h4 {
   font-family: var(--text-h);
   font-size: var(--font-size-h3);
-  line-height: clamp(1.6rem, 2vw, 2rem);
+  line-height: clamp(2.8rem, 2vw, 2.4rem);
 }
 
 .work-description {
@@ -247,8 +250,8 @@ h4 {
 }
 
 .project-details h4 {
-  margin-bottom: 1.2rem;
-  line-height: 5.8rem;
+  margin-bottom: 1.8rem;
+  /* line-height: 5.8rem; */
 }
 
 .project-images {
