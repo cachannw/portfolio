@@ -1,6 +1,7 @@
 :root {
   --text-p: "Poly", serif;
   --text-h: "Mulish", sans-serif;
+
   --font-size-h3: clamp(2rem, 2vw, 2.8rem);
   --color-grey: #575757;
 }
@@ -37,14 +38,15 @@ h3 {
 .p {
   font-family: var(--text-p);
   font-size: clamp(1.6rem, 2vw, 2rem);
-  line-height: clamp(2.4rem, 2.2vw, 3.2rem);
+  line-height: clamp(2.4rem, 2.8vw, 3.2rem);
   font-weight: 100;
+  margin-bottom: clamp(1rem, 1.2vw, 2rem);
 }
 
 .grid-2-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 2.1rem;
+  column-gap: 6rem;
   row-gap: 2.6rem;
 }
 
@@ -55,6 +57,11 @@ h3 {
 .spread-2-col {
   grid-column-start: 1;
   grid-column-end: -1;
+}
+
+.link {
+  color: #9d731e;
+  text-decoration: underline;
 }
 
 /*** HEADER ***/
@@ -136,6 +143,16 @@ h4 {
   font-family: var(--text-h);
   font-size: var(--font-size-h3);
   line-height: clamp(2.8rem, 2vw, 2.4rem);
+}
+
+.section-title {
+  font-family: var(--text-p);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  padding-bottom: clamp(2rem, 2.4vw, 3rem);
+  font-size: clamp(3rem, 3.5vw, 5rem);
+  line-height: clamp(4rem, 4.8vw, 5.4rem);
+  color: #9d731e;
 }
 
 .work-description {
