@@ -1,0 +1,177 @@
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+header {
+  display: flex;
+  gap: 0;
+
+  position: fixed;
+  top: 24px;
+
+  background-color: white;
+  padding: 20px 12px;
+  border-radius: 70px;
+  justify-content: center;
+  min-width: fit-content;
+  max-width: 600px;
+  margin-bottom: clamp(3rem, 4vw, 6rem);
+
+  font-size: 1.6rem;
+  transition: all 0.2s ease-in-out;
+}
+
+header:hover {
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.16);
+}
+
+header a {
+  padding: 10px 31px;
+  color: black;
+  text-decoration: none;
+}
+
+.header-active {
+  background: var(--gradient-color);
+  border-radius: 70px;
+  color: white;
+}
+
+/* HERO */
+/* HERO */
+/* HERO */
+
+.section-hero {
+  margin-top: 120px;
+  margin-bottom: clamp(3rem, 5vw, 17rem);
+}
+
+.section-hero > div {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: clamp(2rem, 2vw, 4rem);
+}
+
+h1 {
+  font-family: "Barlow Condensed", serif;
+  font-weight: 400;
+  font-size: clamp(3rem, 4vw, 8.4rem);
+  color: var(--gradient-color);
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  margin: 0;
+  color: #777;
+}
+
+/* DESIGN */
+/* DESIGN */
+/* DESIGN */
+
+h3 {
+  font-family: "Barlow Condensed";
+  font-size: clamp(2.8rem, 3vw, 5.2rem);
+  font-weight: 400;
+  color: var(--gradient-color);
+}
+
+.card-design {
+  background-color: white;
+  padding: 2.4rem;
+  border-radius: clamp(2rem, 2.2vw, 3.6rem);
+  margin-bottom: clamp(2.4rem, 2.6vw, 3.2rem);
+
+  transition: all 0.2s ease-in-out;
+}
+
+.card-design:hover {
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.16);
+}
+
+.card-design > div {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 1.2vw, 1.6rem);
+  margin-left: 1.6rem;
+}
+
+.card-design-tag {
+  color: #000;
+  font-size: var(--text-p-size);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.card-design-title {
+  color: #000;
+  font-size: clamp(1.8rem, 2vw, 2rem);
+  font-weight: 800;
+  margin: 0;
+}
+
+.card-design-description {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.card-design-button {
+  display: flex;
+  max-width: 132px;
+  padding: clamp(1rem, 1.2vw, 1.6rem) clamp(2rem, 2vw, 2.8rem);
+  justify-content: center;
+  align-items: center;
+  border-radius: 56px;
+  background: var(--gradient-color);
+  color: white;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  margin-top: 1.2rem;
+}
+
+/* TESTIMONIAL */
+/* TESTIMONIAL */
+/* TESTIMONIAL */
+
+.card-testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 2.2vw, 2.4rem);
+
+  background-color: white;
+  border-radius: clamp(2rem, 2.2vw, 3.6rem);
+  padding: clamp(2.4rem, 2.6vw, 3.2rem);
+  font-size: var(--text-p-size);
+  font-weight: 700;
+}
+
+.card-testimonial .from {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-weight: 400;
+}
+
+.card-testimonial p {
+  margin: 0;
+  padding: 0;
+}
+
+/* RESPONSIVE */
+/* RESPONSIVE */
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .card-design > div {
+    margin-left: 0;
+  }
+}

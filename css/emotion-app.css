@@ -1,0 +1,68 @@
+.section-design-detail {
+  font-size: var(--text-p-size);
+  margin-top: 120px;
+}
+
+.section-design-detail h1 {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: clamp(3rem, 3vw, 4rem);
+}
+
+.section-design-detail .section {
+  margin-top: clamp(4rem, 5vw, 7rem);
+  margin-bottom: clamp(4rem, 5vw, 7rem);
+}
+
+.section-design-detail h2 {
+  color: #767676;
+  font-family: "Barlow Condensed";
+  font-size: clamp(2.4rem, 2vw, 3.6rem);
+  font-weight: 700;
+}
+
+.section-design-detail p {
+  font-size: var(--text-p-size);
+  line-height: clamp(2.8rem, 3vw, 3.2rem);
+}
+
+.box-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background-color: white;
+  border-radius: 32px;
+  margin-top: clamp(3.2rem, 4vw, 4.8rem);
+  margin-bottom: clamp(2rem, 3vw, 4rem);
+  padding: clamp(0.8rem, 0.8vw, 1.2rem) clamp(2rem, 2vw, 2.8rem);
+}
+
+.box-question img {
+  width: 12%;
+  height: 12%;
+  margin-right: clamp(2rem, 2vw, 3rem);
+  align-items: center;
+}
+
+.image-with-caption {
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(3.2rem, 4vw, 4.8rem);
+}
+
+.caption-title {
+  font-weight: 700;
+}
+
+.section .grid-2-column {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.8rem, 0.8vw, 1.2rem);
+  line-height: clamp(2.8rem, 3vw, 3.2rem);
+}
